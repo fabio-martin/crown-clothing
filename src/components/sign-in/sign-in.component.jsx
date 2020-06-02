@@ -43,7 +43,7 @@ class SignIn extends React.Component {
                         value={this.state.email} 
                         handleChange={this.handleChange}
                         label='email'
-                        require
+                        require="true"
                     />
                 
                     <FormInput 
@@ -52,12 +52,12 @@ class SignIn extends React.Component {
                         value={this.state.password} 
                         handleChange={this.handleChange}
                         label='password'
-                        require
+                        require="true"
                     />
                   
                     <div className='buttons'>
                         <CustomButton type='submit'>Sign In</CustomButton>
-                        <CustomButton onClick={ signInWithGoogle } isGoogleSignIn>
+                        <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
                             Sign In with Google 
                         </CustomButton>
                     </div>
@@ -67,7 +67,5 @@ class SignIn extends React.Component {
 
     }
 }
-
-
 
 export default SignIn;
